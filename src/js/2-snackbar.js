@@ -8,8 +8,8 @@ form.addEventListener('submit', onFormSubmit);
 function onFormSubmit(event) {
   event.preventDefault();
 
-  const delayInput = form.delay.value;
-  const stateInput = form.state.value;
+  const delayInput = form.elements['delay'].value;
+  const stateInput = form.elements['state'].value;
 
   const delay = Number(delayInput);
 
